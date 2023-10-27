@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+
+<taglib xmlns="http://www.springframework.org/schema/beans" version="2.0">   
+     
+    <description>EL에서 함수실행</description> 
+    <tlib-version>1.0</tlib-version> 
+    <uri>/ELFunctions</uri> 
+     
+    <function>  
+        <description>new 이미지 출력</description> 
+        <name>newimg</name>  
+        <function-class>                   
+            com.utility.Utility 
+        </function-class> 
+        <function-signature>    
+            boolean compareDay( java.lang.String ) 
+        </function-signature> 
+    </function> 
+   
+    <function>  
+        <description>투표종료날짜 체크</description> 
+        <name>checkEdate</name>  
+        <function-class>                   
+            com.utility.Utility 
+        </function-class> 
+        <function-signature>    
+            boolean checkEdate( java.lang.String ) 
+        </function-signature> 
+    </function> 
+    
+     <function>  
+        <description>투표결과 스타일</description> 
+        <name>bar</name>  
+        <function-class>                   
+            com.utility.Utility 
+        </function-class> 
+        <function-signature>    
+            java.util.Map getBar( double, int ) 
+        </function-signature> 
+    </function> 
+    
+   <function>  
+        <description>댓글 갯수</description> 
+        <name>rcount</name>  
+        <function-class>                   
+            com.utility.Utility 
+        </function-class> 
+        <function-signature>    
+            int rcount( int, com.model.bbs.ReplyMapper ) 
+        </function-signature> 
+    </function> 
+</taglib> 
